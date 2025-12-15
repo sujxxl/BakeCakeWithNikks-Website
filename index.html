@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bake Cake With Nikks | Pure Veg Bakery & Café</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Patrick+Hand&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                pink: '#F4C4D4', 
+                darkPink: '#E098AE',
+                cream: '#FFFDF7',
+                maroon: '#743030',
+                brown: '#5D4037',
+                text: '#4A4A4A',
+                accent: '#FF6B6B'
+              }
+            },
+            fontFamily: {
+              sans: ['Quicksand', 'sans-serif'],
+              heading: ['Fredoka', 'sans-serif'],
+              hand: ['Patrick Hand', 'cursive'],
+            },
+            animation: {
+              'blob': 'blob 7s infinite',
+              'bounce-slow': 'bounce 3s infinite',
+            },
+            keyframes: {
+              blob: {
+                '0%': { transform: 'translate(0px, 0px) scale(1)' },
+                '33%': { transform: 'translate(30px, -50px) scale(1.1)' },
+                '66%': { transform: 'translate(-20px, 20px) scale(0.9)' },
+                '100%': { transform: 'translate(0px, 0px) scale(1)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      .hide-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .hide-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+      /* Custom utility for the specific text stroke effect on some headers if needed */
+      .text-stroke {
+        -webkit-text-stroke: 1px #743030;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.561.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-brand-cream text-brand-brown antialiased">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
