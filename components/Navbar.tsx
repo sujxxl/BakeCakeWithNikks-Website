@@ -22,7 +22,7 @@ const Navbar = () => {
   ];
   const BrandLogo = () => (
     <img 
-      src="../public/logo_transparent.jpg" 
+      src="/logo_transparent.jpg" 
       alt="Bake Cake with Nikks Logo" 
       className="h-16 w-auto md:h-20"
     />
